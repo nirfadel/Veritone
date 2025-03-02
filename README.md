@@ -87,16 +87,16 @@ In the github repo there are some projects and files:
    - Using immutable data properties on BillingRecord
  3. BillingDSChallenge - 
     Implement Top K solution:
-		Aggregation:
+	Aggregation:
 			- Iterate all BillingRecord objects to calculate total amount for each customer usinf HashMap
-			- Space: O(m) where m is number of unique cusomers
-                Selection: 
+			- Time: O(n) Space: O(m) where m is number of unique cusomers
+        Selection: 
 			- Use min heap with priority queue for getting top K customers
-		Result:
-     			- Extract the results from heap in reverse order
-
-     - This solution efficient for large datasets because:
-	    - We need to scan billing records once
-	    - The heap maintains always just k elments and not all data
+			  Time: O(m log k) for all customers
+	Result: Extract the results from heap in reverse order
+		
+	- This solution efficient for large datasets because:
+		- We need to scan billing records once
+	        - The heap maintains always just k elments and not all data
 		 
 
