@@ -98,5 +98,16 @@ In the github repo there are some projects and files:
 	This solution efficient for large datasets because:
 	- We need to scan billing records once
  	- The heap maintains always just k elments and not all data
-		 
-
+4. crm-billing-app - 
+   - Implement UI with angular 
+	 - Service-based approach for data fetching
+	 - Reactive programming with RxJS
+	 - Components 
+	 - Data visualization
+		- line chart for billing records over Time	
+		- doughnut chart for subscription distribution
+		- interactive filtering
+		- table design for all billing records
+	 - Responsive design 
+	 - Loading and erorrs
+	 - filtering
