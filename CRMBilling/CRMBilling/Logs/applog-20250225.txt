@@ -1,0 +1,223 @@
+2025-02-25 21:57:36.144 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-25 21:57:36.335 +02:00 [DBG] Hosting starting
+2025-02-25 21:57:36.803 +02:00 [DBG] Loaded hosting startup assembly CRMBilling
+2025-02-25 21:57:36.813 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-02-25 21:57:36.813 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-02-25 21:57:36.813 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-02-25 21:57:36.889 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44322/ - null null
+2025-02-25 21:57:37.154 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-25 21:57:37.154 +02:00 [INF] Hosting environment: Development
+2025-02-25 21:57:37.155 +02:00 [INF] Content root path: C:\Users\רעות\Documents\ניר\Projects\Veritone\CRMBilling\CRMBilling
+2025-02-25 21:57:37.155 +02:00 [DBG] Hosting started
+2025-02-25 21:57:37.196 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-25 21:57:37.222 +02:00 [DBG] No candidates found for the request path '/'
+2025-02-25 21:57:37.223 +02:00 [DBG] Request did not match any endpoints
+2025-02-25 21:57:37.252 +02:00 [INF] HTTP GET / responded 404 in 3.8332 ms
+2025-02-25 21:57:37.300 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44322/ - 404 null null 429.927ms
+2025-02-25 21:57:37.304 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44322/, Response status code: 404
+2025-02-25 22:00:10.278 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:44322/api/Billings - application/json 123
+2025-02-25 22:00:10.286 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Billings'
+2025-02-25 22:00:10.290 +02:00 [DBG] Endpoint 'CRMBilling.Controllers.BillingsController.Post (CRMBilling)' with route pattern 'api/Billings' is valid for the request path '/api/Billings'
+2025-02-25 22:00:10.291 +02:00 [DBG] Request matched endpoint 'CRMBilling.Controllers.BillingsController.Post (CRMBilling)'
+2025-02-25 22:00:10.308 +02:00 [INF] Executing endpoint 'CRMBilling.Controllers.BillingsController.Post (CRMBilling)'
+2025-02-25 22:00:10.389 +02:00 [INF] Route matched with {action = "Post", controller = "Billings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(CRMBilling.Core.Model.CreateBillingRecordDto) on controller CRMBilling.Controllers.BillingsController (CRMBilling).
+2025-02-25 22:00:10.420 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-25 22:00:10.421 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-25 22:00:10.421 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-25 22:00:10.422 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-25 22:00:10.422 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-25 22:00:10.438 +02:00 [DBG] Executing controller factory for controller CRMBilling.Controllers.BillingsController (CRMBilling)
+2025-02-25 22:00:10.772 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-25 22:00:10.813 +02:00 [DBG] Executed controller factory for controller CRMBilling.Controllers.BillingsController (CRMBilling)
+2025-02-25 22:00:10.817 +02:00 [DBG] Attempting to bind parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto' ...
+2025-02-25 22:00:10.819 +02:00 [DBG] Attempting to bind parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto' using the name '' in request data ...
+2025-02-25 22:00:10.821 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-02-25 22:00:10.879 +02:00 [DBG] JSON input formatter succeeded, deserializing to type 'CRMBilling.Core.Model.CreateBillingRecordDto'
+2025-02-25 22:00:10.880 +02:00 [DBG] Done attempting to bind parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto'.
+2025-02-25 22:00:10.880 +02:00 [DBG] Done attempting to bind parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto'.
+2025-02-25 22:00:10.880 +02:00 [DBG] Attempting to validate the bound parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto' ...
+2025-02-25 22:00:10.922 +02:00 [DBG] Done attempting to validate the bound parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto'.
+2025-02-25 22:00:11.828 +02:00 [WRN] No store type was specified for the decimal property 'BillingAmount' on entity type 'BillingRecord'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-25 22:00:11.964 +02:00 [DBG] Entity Framework Core 9.0.2 initialized 'CRMBillingDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.2' with options: EngineType=SqlServer 
+2025-02-25 22:00:12.021 +02:00 [DBG] 'CRMBillingDBContext' generated a temporary value for the property 'BillingRecord.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-25 22:00:12.138 +02:00 [DBG] Context 'CRMBillingDBContext' started tracking 'BillingRecord' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-25 22:00:12.146 +02:00 [DBG] SaveChanges starting for 'CRMBillingDBContext'.
+2025-02-25 22:00:12.152 +02:00 [DBG] DetectChanges starting for 'CRMBillingDBContext'.
+2025-02-25 22:00:12.248 +02:00 [DBG] DetectChanges completed for 'CRMBillingDBContext'.
+2025-02-25 22:00:12.652 +02:00 [DBG] Creating DbConnection.
+2025-02-25 22:00:12.729 +02:00 [DBG] Created DbConnection. (67ms).
+2025-02-25 22:00:12.739 +02:00 [DBG] Opening connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:00:13.511 +02:00 [DBG] Opened connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:00:13.535 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-25 22:00:13.549 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2025-02-25 22:00:13.569 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (34ms).
+2025-02-25 22:00:13.601 +02:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [BillingRecords] ([BillingAmount], [CustomerName], [NextBillingDate], [Status], [SubscriptionType])
+OUTPUT INSERTED.[Id], INSERTED.[BillingDate]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-02-25 22:00:13.712 +02:00 [INF] Executed DbCommand (133ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [BillingRecords] ([BillingAmount], [CustomerName], [NextBillingDate], [Status], [SubscriptionType])
+OUTPUT INSERTED.[Id], INSERTED.[BillingDate]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-02-25 22:00:13.761 +02:00 [DBG] The foreign key property 'BillingRecord.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-02-25 22:00:13.784 +02:00 [DBG] Closing data reader to 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:00:13.793 +02:00 [DBG] A data reader for 'CRMBillingDB' on server 'DESKTOP-SPC7OGC' is being disposed after spending 73ms reading results.
+2025-02-25 22:00:13.802 +02:00 [DBG] Closing connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:00:13.815 +02:00 [DBG] Closed connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC' (13ms).
+2025-02-25 22:00:13.833 +02:00 [DBG] An entity of type 'BillingRecord' tracked by 'CRMBillingDBContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-25 22:00:13.835 +02:00 [DBG] SaveChanges completed for 'CRMBillingDBContext' with 1 entities written to the database.
+2025-02-25 22:00:13.838 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2025-02-25 22:00:13.849 +02:00 [INF] Executed action CRMBilling.Controllers.BillingsController.Post (CRMBilling) in 3422.5158ms
+2025-02-25 22:00:13.850 +02:00 [INF] Executed endpoint 'CRMBilling.Controllers.BillingsController.Post (CRMBilling)'
+2025-02-25 22:00:13.852 +02:00 [INF] HTTP POST /api/Billings responded 201 in 3549.6789 ms
+2025-02-25 22:00:13.855 +02:00 [DBG] 'CRMBillingDBContext' disposed.
+2025-02-25 22:00:13.870 +02:00 [DBG] Disposing connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:00:13.878 +02:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-02-25 22:00:13.879 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:44322/api/Billings - 201 null null 3602.8852ms
+2025-02-25 22:00:33.483 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:44322/api/Billings - application/json 136
+2025-02-25 22:00:33.484 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Billings'
+2025-02-25 22:00:33.484 +02:00 [DBG] Endpoint 'CRMBilling.Controllers.BillingsController.Post (CRMBilling)' with route pattern 'api/Billings' is valid for the request path '/api/Billings'
+2025-02-25 22:00:33.484 +02:00 [DBG] Request matched endpoint 'CRMBilling.Controllers.BillingsController.Post (CRMBilling)'
+2025-02-25 22:00:33.486 +02:00 [INF] Executing endpoint 'CRMBilling.Controllers.BillingsController.Post (CRMBilling)'
+2025-02-25 22:00:33.486 +02:00 [INF] Route matched with {action = "Post", controller = "Billings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(CRMBilling.Core.Model.CreateBillingRecordDto) on controller CRMBilling.Controllers.BillingsController (CRMBilling).
+2025-02-25 22:00:33.489 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-25 22:00:33.492 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-25 22:00:33.492 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-25 22:00:33.492 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-25 22:00:33.493 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-25 22:00:33.493 +02:00 [DBG] Executing controller factory for controller CRMBilling.Controllers.BillingsController (CRMBilling)
+2025-02-25 22:00:33.498 +02:00 [DBG] Executed controller factory for controller CRMBilling.Controllers.BillingsController (CRMBilling)
+2025-02-25 22:00:33.499 +02:00 [DBG] Attempting to bind parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto' ...
+2025-02-25 22:00:33.500 +02:00 [DBG] Attempting to bind parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto' using the name '' in request data ...
+2025-02-25 22:00:33.501 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-02-25 22:00:33.508 +02:00 [DBG] JSON input formatter succeeded, deserializing to type 'CRMBilling.Core.Model.CreateBillingRecordDto'
+2025-02-25 22:00:33.508 +02:00 [DBG] Done attempting to bind parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto'.
+2025-02-25 22:00:33.508 +02:00 [DBG] Done attempting to bind parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto'.
+2025-02-25 22:00:33.508 +02:00 [DBG] Attempting to validate the bound parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto' ...
+2025-02-25 22:00:33.517 +02:00 [DBG] Done attempting to validate the bound parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto'.
+2025-02-25 22:00:33.612 +02:00 [DBG] Entity Framework Core 9.0.2 initialized 'CRMBillingDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.2' with options: EngineType=SqlServer 
+2025-02-25 22:00:33.614 +02:00 [DBG] 'CRMBillingDBContext' generated a temporary value for the property 'BillingRecord.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-25 22:00:33.615 +02:00 [DBG] Context 'CRMBillingDBContext' started tracking 'BillingRecord' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-25 22:00:33.615 +02:00 [DBG] SaveChanges starting for 'CRMBillingDBContext'.
+2025-02-25 22:00:33.616 +02:00 [DBG] DetectChanges starting for 'CRMBillingDBContext'.
+2025-02-25 22:00:33.616 +02:00 [DBG] DetectChanges completed for 'CRMBillingDBContext'.
+2025-02-25 22:00:33.617 +02:00 [DBG] Creating DbConnection.
+2025-02-25 22:00:33.617 +02:00 [DBG] Created DbConnection. (0ms).
+2025-02-25 22:00:33.618 +02:00 [DBG] Opening connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:00:33.619 +02:00 [DBG] Opened connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:00:33.619 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-25 22:00:33.620 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-25 22:00:33.620 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-02-25 22:00:33.623 +02:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [BillingRecords] ([BillingAmount], [CustomerName], [NextBillingDate], [Status], [SubscriptionType])
+OUTPUT INSERTED.[Id], INSERTED.[BillingDate]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-02-25 22:00:33.665 +02:00 [INF] Executed DbCommand (42ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [BillingRecords] ([BillingAmount], [CustomerName], [NextBillingDate], [Status], [SubscriptionType])
+OUTPUT INSERTED.[Id], INSERTED.[BillingDate]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-02-25 22:00:33.665 +02:00 [DBG] The foreign key property 'BillingRecord.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-02-25 22:00:33.685 +02:00 [DBG] Closing data reader to 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:00:33.686 +02:00 [DBG] A data reader for 'CRMBillingDB' on server 'DESKTOP-SPC7OGC' is being disposed after spending 20ms reading results.
+2025-02-25 22:00:33.686 +02:00 [DBG] Closing connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:00:33.686 +02:00 [DBG] Closed connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC' (0ms).
+2025-02-25 22:00:33.689 +02:00 [DBG] An entity of type 'BillingRecord' tracked by 'CRMBillingDBContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-25 22:00:33.689 +02:00 [DBG] SaveChanges completed for 'CRMBillingDBContext' with 1 entities written to the database.
+2025-02-25 22:00:33.690 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2025-02-25 22:00:33.690 +02:00 [INF] Executed action CRMBilling.Controllers.BillingsController.Post (CRMBilling) in 197.2668ms
+2025-02-25 22:00:33.690 +02:00 [INF] Executed endpoint 'CRMBilling.Controllers.BillingsController.Post (CRMBilling)'
+2025-02-25 22:00:33.691 +02:00 [INF] HTTP POST /api/Billings responded 201 in 204.8256 ms
+2025-02-25 22:00:33.693 +02:00 [DBG] 'CRMBillingDBContext' disposed.
+2025-02-25 22:00:33.693 +02:00 [DBG] Disposing connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:00:33.694 +02:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-02-25 22:00:33.695 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:44322/api/Billings - 201 null null 211.7514ms
+2025-02-25 22:01:18.213 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-25 22:01:18.480 +02:00 [DBG] Hosting starting
+2025-02-25 22:01:18.743 +02:00 [DBG] Loaded hosting startup assembly CRMBilling
+2025-02-25 22:01:18.786 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-02-25 22:01:18.786 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-02-25 22:01:18.786 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-02-25 22:01:18.943 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44322/ - null null
+2025-02-25 22:01:19.242 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-25 22:01:19.242 +02:00 [INF] Hosting environment: Development
+2025-02-25 22:01:19.242 +02:00 [INF] Content root path: C:\Users\רעות\Documents\ניר\Projects\Veritone\CRMBilling\CRMBilling
+2025-02-25 22:01:19.243 +02:00 [DBG] Hosting started
+2025-02-25 22:01:19.411 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-25 22:01:19.461 +02:00 [DBG] No candidates found for the request path '/'
+2025-02-25 22:01:19.462 +02:00 [DBG] Request did not match any endpoints
+2025-02-25 22:01:19.491 +02:00 [INF] HTTP GET / responded 404 in 5.0631 ms
+2025-02-25 22:01:19.544 +02:00 [DBG] Connection ID "17870283327311708200" disconnecting.
+2025-02-25 22:01:19.545 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44322/ - 404 null null 608.8323ms
+2025-02-25 22:01:19.560 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44322/, Response status code: 404
+2025-02-25 22:01:24.903 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:44322/api/Billings - application/json 124
+2025-02-25 22:01:24.908 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Billings'
+2025-02-25 22:01:24.917 +02:00 [DBG] Endpoint 'CRMBilling.Controllers.BillingsController.Post (CRMBilling)' with route pattern 'api/Billings' is valid for the request path '/api/Billings'
+2025-02-25 22:01:24.919 +02:00 [DBG] Request matched endpoint 'CRMBilling.Controllers.BillingsController.Post (CRMBilling)'
+2025-02-25 22:01:24.926 +02:00 [INF] Executing endpoint 'CRMBilling.Controllers.BillingsController.Post (CRMBilling)'
+2025-02-25 22:01:25.015 +02:00 [INF] Route matched with {action = "Post", controller = "Billings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(CRMBilling.Core.Model.CreateBillingRecordDto) on controller CRMBilling.Controllers.BillingsController (CRMBilling).
+2025-02-25 22:01:25.023 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-25 22:01:25.024 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-25 22:01:25.024 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-25 22:01:25.024 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-25 22:01:25.024 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-25 22:01:25.026 +02:00 [DBG] Executing controller factory for controller CRMBilling.Controllers.BillingsController (CRMBilling)
+2025-02-25 22:01:25.241 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-25 22:01:25.273 +02:00 [DBG] Executed controller factory for controller CRMBilling.Controllers.BillingsController (CRMBilling)
+2025-02-25 22:01:25.279 +02:00 [DBG] Attempting to bind parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto' ...
+2025-02-25 22:01:25.285 +02:00 [DBG] Attempting to bind parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto' using the name '' in request data ...
+2025-02-25 22:01:25.287 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-02-25 22:01:25.340 +02:00 [DBG] JSON input formatter succeeded, deserializing to type 'CRMBilling.Core.Model.CreateBillingRecordDto'
+2025-02-25 22:01:25.341 +02:00 [DBG] Done attempting to bind parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto'.
+2025-02-25 22:01:25.341 +02:00 [DBG] Done attempting to bind parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto'.
+2025-02-25 22:01:25.342 +02:00 [DBG] Attempting to validate the bound parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto' ...
+2025-02-25 22:01:25.356 +02:00 [DBG] Done attempting to validate the bound parameter 'billingRecordDto' of type 'CRMBilling.Core.Model.CreateBillingRecordDto'.
+2025-02-25 22:01:25.360 +02:00 [INF] Nir fadel test
+2025-02-25 22:01:26.294 +02:00 [WRN] No store type was specified for the decimal property 'BillingAmount' on entity type 'BillingRecord'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-25 22:01:26.449 +02:00 [DBG] Entity Framework Core 9.0.2 initialized 'CRMBillingDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.2' with options: EngineType=SqlServer 
+2025-02-25 22:01:26.511 +02:00 [DBG] 'CRMBillingDBContext' generated a temporary value for the property 'BillingRecord.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-25 22:01:26.612 +02:00 [DBG] Context 'CRMBillingDBContext' started tracking 'BillingRecord' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-25 22:01:26.621 +02:00 [DBG] SaveChanges starting for 'CRMBillingDBContext'.
+2025-02-25 22:01:26.628 +02:00 [DBG] DetectChanges starting for 'CRMBillingDBContext'.
+2025-02-25 22:01:26.659 +02:00 [DBG] DetectChanges completed for 'CRMBillingDBContext'.
+2025-02-25 22:01:26.899 +02:00 [DBG] Creating DbConnection.
+2025-02-25 22:01:26.961 +02:00 [DBG] Created DbConnection. (64ms).
+2025-02-25 22:01:26.968 +02:00 [DBG] Opening connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:01:27.926 +02:00 [DBG] Opened connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:01:27.955 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-25 22:01:27.987 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (19ms).
+2025-02-25 22:01:28.018 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (60ms).
+2025-02-25 22:01:28.044 +02:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [BillingRecords] ([BillingAmount], [CustomerName], [NextBillingDate], [Status], [SubscriptionType])
+OUTPUT INSERTED.[Id], INSERTED.[BillingDate]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-02-25 22:01:28.303 +02:00 [INF] Executed DbCommand (256ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [BillingRecords] ([BillingAmount], [CustomerName], [NextBillingDate], [Status], [SubscriptionType])
+OUTPUT INSERTED.[Id], INSERTED.[BillingDate]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-02-25 22:01:28.428 +02:00 [DBG] The foreign key property 'BillingRecord.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-02-25 22:01:28.456 +02:00 [DBG] Closing data reader to 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:01:28.468 +02:00 [DBG] A data reader for 'CRMBillingDB' on server 'DESKTOP-SPC7OGC' is being disposed after spending 154ms reading results.
+2025-02-25 22:01:28.473 +02:00 [DBG] Closing connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:01:28.485 +02:00 [DBG] Closed connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC' (10ms).
+2025-02-25 22:01:28.505 +02:00 [DBG] An entity of type 'BillingRecord' tracked by 'CRMBillingDBContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-25 22:01:28.507 +02:00 [DBG] SaveChanges completed for 'CRMBillingDBContext' with 1 entities written to the database.
+2025-02-25 22:01:28.512 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2025-02-25 22:01:28.520 +02:00 [INF] Executed action CRMBilling.Controllers.BillingsController.Post (CRMBilling) in 3489.9304ms
+2025-02-25 22:01:28.521 +02:00 [INF] Executed endpoint 'CRMBilling.Controllers.BillingsController.Post (CRMBilling)'
+2025-02-25 22:01:28.522 +02:00 [INF] HTTP POST /api/Billings responded 201 in 3598.6552 ms
+2025-02-25 22:01:28.527 +02:00 [DBG] 'CRMBillingDBContext' disposed.
+2025-02-25 22:01:28.544 +02:00 [DBG] Disposing connection to database 'CRMBillingDB' on server 'DESKTOP-SPC7OGC'.
+2025-02-25 22:01:28.572 +02:00 [DBG] Disposed connection to database '' on server '' (13ms).
+2025-02-25 22:01:28.573 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:44322/api/Billings - 201 null null 3670.1932ms
