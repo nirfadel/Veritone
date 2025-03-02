@@ -95,8 +95,8 @@ In the github repo there are some projects and files:
 			  Time: O(m log k) for all customers
 	Result: Extract the results from heap in reverse order
 		
-	- This solution efficient for large datasets because:
-		- We need to scan billing records once
-	        - The heap maintains always just k elments and not all data
+	This solution efficient for large datasets because:
+	- We need to scan billing records once
+ 	- The heap maintains always just k elments and not all data
 		 
 
