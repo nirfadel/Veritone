@@ -90,12 +90,13 @@ In the github repo there are some projects and files:
 		Aggregation:
 			- Iterate all BillingRecord objects to calculate total amount for each customer usinf HashMap
 			- Space: O(m) where m is number of unique cusomers
-        Selection: 
+                Selection: 
 			- Use min heap with priority queue for getting top K customers
-		Result: Extract the results from heap in reverse order
-		
-		- This solution efficient for large datasets because:
-			- We need to scan billing records once
-		    - The heap maintains always just k elments and not all data
+		Result:
+     			- Extract the results from heap in reverse order
+
+     - This solution efficient for large datasets because:
+	    - We need to scan billing records once
+	    - The heap maintains always just k elments and not all data
 		 
 
