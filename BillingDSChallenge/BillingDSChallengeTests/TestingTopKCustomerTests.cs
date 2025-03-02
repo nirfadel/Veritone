@@ -44,6 +44,7 @@ namespace BillingDSChallenge.Tests
         };
 
             var topK = TopKCustomers.FindTopKCustomers(records, 2);
+            CollectionAssert.AreEqual(new List<string> { "Customer2", "Customer3" }, topK);
         }
 
         [TestMethod()]
