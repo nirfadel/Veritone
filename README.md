@@ -98,6 +98,8 @@ In the github repo there are some projects and files:
 	This solution efficient for large datasets because:
 	- We need to scan billing records once
  	- The heap maintains always just k elments and not all data
+	
+	Various Testing: Empty list, Null List, Regular list, Minus data, Scalability with multiple large datasets   
 4. crm-billing-app - 
    - Implement UI with angular 
 	 - Service-based approach for data fetching
