@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "9c296d1b-3741-4e05-a425-66b0876cc702",
+		"name": "Veritone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2867750"
+	},
+	"item": [
+		{
+			"name": "Get all billing records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44322/api/Billings",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"api",
+						"Billings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding new billing record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CustomerName\": \"Nir Fadel\",\r\n    \"SubscriptionType\": \"Basic\",\r\n    \"BillingAmount\": 120.5,\r\n    \"BillingDate\": \"2025-02-25T14:45:15\",\r\n    \"Status\": \"Paid\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44322/api/Billings",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"api",
+						"Billings"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
