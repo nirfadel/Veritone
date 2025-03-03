@@ -113,3 +113,5 @@ In the github repo there are some projects and files:
 	 - Responsive design 
 	 - Loading and erorrs
 	 - filtering
+ 5. Db  - Creating BillingRecords table with identity primary key and non clustered index (Idx-SubscriptionType_BillingDate)
+        - DistributedCache - table for distributed cache
